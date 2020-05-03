@@ -1,0 +1,66 @@
+<!--<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registrar</title>
+    <meta charset="UTF-8">
+</head>
+
+<body style="background-color: deeppink;">
+
+    <form method="post" action="procesar.php" id="registrar">
+        Ingrese contraseña:
+        <input type="password" id="clave1" name="clave1" size="10" required>
+        <br> Repita contraseña:
+        <input type="password" id="clave2" name="clave2" size="10" required>
+        <br>
+        <input type="submit" id="confirmar" name="Siguiente" value="Siguiente">
+    </form>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', inicio, false);
+
+        function inicio() {
+            document.getElementById("registrar").addEventListener('submit', validar, false);
+        }
+
+        function validar(evt) {
+            var cla1 = document.getElementById("clave1").value;
+            var cla2 = document.getElementById("clave2").value;
+            if (cla1 != cla2) {
+                alert('Las claves ingresadas son diferentes');
+                evt.preventDefault();
+            }
+        }
+    </script>
+
+</body>
+
+</html>-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>calculo</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <script>
+        var num2, num1, suma;
+        num1 = prompt('Ingrese un numero:', '');
+        num2 = prompt('Ingrese otro numero:', '');
+        num1 = parseInt(num1);
+        num2 = parseInt(num2);
+        if (isNaN(num1) || isNaN(num2)) {
+            document.write('No son valores numericos. Ingrese numeros');
+        } else {
+            suma = num1 + num2;
+            document.write('La multiplicacion de los dos valores es:' + suma);
+        }
+    </script>
+
+</body>
+
+</html>
